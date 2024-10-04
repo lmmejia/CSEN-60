@@ -7,7 +7,27 @@ order of precedence:
 content: !important will override any precedence
 */
 
+html{
+    font-family: Arial, sans-serif;
+}
+/*html-tag selection*/
+body {
+    background-color: #E2CFEA;
+}
+
 p{
-    color: purple !important;
+    color: purple;
     /* background-color: orange; */
+}
+
+/*class selector*/
+.middle-p{
+    color: #FFFFFF;
+    text-align:center;
+    text-decoration: underline;
+}
+
+/*id selector*/
+#main-text{
+    line-height: 30px;
 }
