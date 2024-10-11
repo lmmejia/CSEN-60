@@ -16,7 +16,7 @@ header, footer{
 }
 
 button{
-    display:flex;
+    display: flex;
     padding: 0.5rem 1rem;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
@@ -32,18 +32,22 @@ button{
     align-items: center;
 }
 
-h1{
-    display:flex;
-    align-items: center;
-}
-main{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 200px 520px;
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    min-width: fit-content;
 }
 
-footer{
-    display: flex;
-    flex-direction: row;
+input[type="text"] {
+    display:flex;
+    border-radius: 25rem ; /*make corners round*/
+    padding: 1rem 15rem;
+    min-width: 5rem
+}
+
+main{
+    align-self: center;
 }
