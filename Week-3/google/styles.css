@@ -34,11 +34,13 @@ button{
 
 
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* min-width: fit-content; */
     height: 100vh;
-    min-width: fit-content;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
 }
 
 input[type="text"] {
