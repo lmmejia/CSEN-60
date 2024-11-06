@@ -22,7 +22,7 @@ What is Usability?
 Common Web Usability Problems
 - Long text 
     - Cant be read quickly
-- Cluttered or otherwiae poor layout
+- Cluttered or otherwise poor layout
 - Requires horizontal scrolling or makes assumptions about user's screen size
 - Poorly chosen colors
 - Poor or missing navigation controls (back, forward, home)
@@ -109,8 +109,8 @@ Search Engine Optimization (SEO)
     - Incorporate good web design and usability principles
 - HTML
     - Semantic HTML
-        - One <h1> per page
-        - <header> <main> <footer>
+        - One h1 per page
+        - header  main footer 
     - Metadata (meta tags on html pages)
     - Site map
 - Accessbility
