@@ -105,6 +105,37 @@
     - Typically built into server and browser
     - Different port used for secure communication
 
+### Secure Socket Layer (SSL)
+- A protocol that allows data to be privately exchanged over public networks
+- Developed by netscape
+- Encrypts data sent between a client (usually a web browser) and a web server
+- Utilizes both symmetric and asymmetric keys
+- HTTPS is HTTP over SSL
+- Browsers display a lock icon
+- SSL provides secure communication between a client and server by using:
+    - Server and client digital certificates for authentication
+    - Symmetric-key cryptography using a session key for bulk encryption
+    - Public-key cryptography for transfer of the session key
+
+### Digital Certificate
+- A form of an asymmetric key
+- Also contains information about the certificate, the holder of the certificate, and the issuer of the certificate.
+- Used by SSL to authenticate the identity of the web server
+- The contents of a server’s digital certificate include:
+    - The public key
+    - Effective date of the certificate
+    - Expiration date of the certificate
+    - Details about the Certificate Authority -- the issuer of the certificate
+    - Details about the certificate holder
+    - A digest of the certificate content
+
+### Certificate Authorization
+- A trusted third-party organization or company that issued digital certificates
+- Well known certificate authorities:
+    - IdenTrust
+    - DigiCert
+    - GTS
+
 
 ## Web Privacy
 ### Data Collection - How?
@@ -112,6 +143,28 @@
 - Mobile OS-provided
 - Cookies
 - Behavior Logging
+
+### Data Collection: Form/User Entry
+- Social Networks
+    - Share info with others
+    - Connect with friends
+    - Attract potential employers
+- Online Shopping
+    - Credit card for payment
+    - Home address for shipping
+- Online finances
+    - Banking
+    - Investments
+    - Tax
+
+### Mobile OS-provided
+- Contacts
+    - "Find your friends on ___"
+    - Instant, massive social graph
+- Photos
+    - May include metadata
+- Location
+    -"Find __ near you"
 
 ### Cookies
 - A cookie is a name/value pair created by a website to store information on your computer
@@ -124,7 +177,62 @@
     - Ad tracking
     - Site metrics
 
-### Privacy Policy
+### Data Collection: Behavior Logging
+- Any action a user takes on a webpage can be logged
+- HTML event listeners!
+    - Clicks
+    - Hovers
+- Time between actions
+    - How long you spend looking at a post
+    - Did you skip an ad? At what point in the ad?
+
+### Data Applications: Ad Tracking
+- How are all these products free?
+    - Facebook / Twitter / LinkedIn
+    - Google
+    - Youtube / Soundcloud
+- Goal: Covert an ad seen on screen to some action
+- The better targeted the ad, the better chance of a conversion ($$$)
+
+### Data Applications: Search
+- Improve results
+    -   Did the user click a link?
+        - Was it the top result?
+    -  Did the user need to write another query?
+- Predictive suggestions
+- Pagerank
+- Natural language processing
+
+### Data Applications: Recommendations
+- "Based on ___ you liked"
+- Given previous action, provide most likely next step for user
+- Given someones social graoh, they may be more likely to engage with a recommendation
+- Ad targeting is recommendation
+- Collaborative filtering
+
+### Data Applications: Drive a metric
+- Optimize a webpage's behavior for something that can be measured
+- Iteraticve UI improvements
+- Examples
+    - Email client: decrease time to reply to emails
+    - Increases engagement with a feature that generates more user data
+    - Increase behavior that fits more profitable business model
+- A/B testing
+
+### Lots of Sensitive Information
+- Personally identifiable information (PII)
+    - Name, address, phone, email
+    - Demographics: age, gender, race
+    - Past contributions, purchases, rentals, friends, ...
+- Financial information
+    - Credit cards
+    - Bank accounts
+- Legally sensitive
+    - Health information (HIPPA)
+    - Student information (FERPA)
+    - Information from children (COPPA)
+
+    ### Privacy Policy
 - Statement saying what the web site does with any information it collects
     - Or otherwise obtains from the user
     - And why the web site needs this information
@@ -133,3 +241,55 @@
     - Different lands have different laws
 - Written in dense legal language
 - Users may or may not pay attention
+
+### The Role of a Privacy Policy
+- Delineate what types of information are collected
+    - Whether that information is used immediately or saved
+- Specify why the information is needed
+    - Not always done
+    - Useful if the application is not obvious
+- Specify who owns the information
+    - If you own your information, company can’t use it freely
+    - If they own the information things are more flexible
+- Specify what an application can do with the information
+    - Use in the application only
+    - Use in the application and the owning company
+    - Use in the application, owning company, affiliates
+    - Share (sell to) with related businesses
+    - Share (sell to) with anyone
+- Specify which controls you have over the information
+    - Can you stop it from being collected
+    - an you request any collected information be discarded
+
+### Developer - Legal Responsibility
+- Privacy has legal implications            
+    - Already covered by laws in many places
+    - Already covered by laws in many domains
+    - European law is generally much stricter than US
+    - China has a policy of censorship
+- Developer is responsible for breaches of 
+    - You need to use “best efforts” to avoid them
+    - Implications can be large
+        - Fines, imprisonment
+        - Cost to protect the consumer
+        - Cost related to the breach
+
+### GDPR
+- General Data Protection Regulation
+- Protects citizens of the European Union
+    - Any service with EU users must comply
+    - Web is global
+- Users must provide consent
+    - Services must define how data will be used
+    - Can’t collect data for one purpose, then use later for another
+- Must collect minimum amount of data to achieve stated purpose
+    - Don’t need someone’s age to add them to a newsletter
+- Consumers may view all data collected about them
+- Consumers have the right to be “forgotten”
+
+### CCPA
+- California Consumer Privacy Act
+    - Any service with CA users must comply
+- Similar to, less strict than GDPR
+    - Opt out vs. Consent (Opt-in)
+    - "Do not sell my personal data"
