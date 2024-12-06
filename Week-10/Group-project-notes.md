@@ -64,3 +64,56 @@
     - defer for js
     - console.log
 - cookies are good and fun
+
+# Bluey
+- four pages
+- used git html css and js
+- carousel, quiz, characters
+- challeneges
+    - merge issues
+    - long loading time
+    - lower resolution
+    - no base.css
+    - communication
+- key learnings
+    - devtools are very helpful
+    - learn to google
+
+# Pinterest
+-  web techs
+    -css js html
+- pages
+    - all pin
+    - profile
+    - pinning
+- profile
+    - shows picture, username, id
+    -functionalities
+        - picture shows up in bottom gallery
+        -cookies for saved pins
+- all pins page
+    - cookies open saved pins
+    - can access saved pins
+- pin details pins
+    - save button
+    - shows image closer
+- best practices
+    - box method
+    - z index
+    - local storage 
+- challeneges
+    - overestimating what you can do
+    - issues with cookies and hono
+    - screen sizes are different 
+    - merge conflicts
+    - code compatibility
+    - buttons leaving
+    - spacing (used devtools)
+- key learnings
+    - create the most basic things first
+    - differrent webpage layouts
+    - merge conflicts
+    - be specific with classes and ids
+    
+
+
